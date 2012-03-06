@@ -10,8 +10,6 @@
 ; }
 
 
-; // then triple the numbers?
-
 
 ; // work out some kind of total
 ; var total = 0;
@@ -19,12 +17,14 @@
 ;   $total += $number;
 ; }
 
+
 ; // filter to a subset of data
-; var $evenNumbers = array();
+; var $oddNumbers = array();
 ; foreach ( $number in $numbers ) {
 ;   if ( $number % 2 ) {
-;     $evenNumbers.push( $number );
+;     $oddNumbers.push( $number );
 ;   }
 ; }
 
+(defn odd [x] (> (mod x 2) 0))
 
